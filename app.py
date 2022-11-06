@@ -26,6 +26,8 @@ class Invoices(db.Model):
     BillingCountry = db.Column(db.NVARCHAR)
     BillingPostalCode = db.Column(db.NVARCHAR)
     Total = db.Column(db.FLOAT)
+    
+    
 
     def __init__(self, InvoiceId, CustomerId, InvoiceDate, BillingAddress, BillingCity, BillingState, BillingCountry, BillingPostalCode, Total):
         self.InvoiceId = InvoiceId
